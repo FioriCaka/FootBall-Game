@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  font-family: system-ui, Segoe UI, Roboto, Arial;
+  background: #0b1220;
+  color: #eee;
+}
+#c {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+#ui {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 8px 10px;
+  border-radius: 8px;
+  backdrop-filter: blur(6px);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+#ui input[type="range"] {
+  width: 140px;
+}
+#ui button {
+  background: #1f2937;
+  color: #fff;
+  border: 0;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#ui button:hover {
+  filter: brightness(1.08);
+}
+
+#hud {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-end;
+}
+#scoreboard {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+#instructions {
+  background: rgba(0, 0, 0, 0.25);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+#reset {
+  background: #ef4444;
+  color: #fff;
+  border: 0;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#reset:hover {
+  filter: brightness(1.05);
+}
+
+#kickContainer {
+  width: 140px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 6px;
+  overflow: hidden;
+  display: block;
+}
+#kickCharge {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #f97316, #ef4444);
+  transition: width 0.06s linear;
+}

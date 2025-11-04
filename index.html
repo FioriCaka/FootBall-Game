@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Three.js Animation — Torus Knot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="c"></canvas>
+  <div id="ui" role="region" aria-label="controls">
+    <label for="speed">Speed</label>
+    <input id="speed" type="range" min="0" max="5" step="0.01" value="1">
+    <button id="wire">Toggle wireframe</button>
+  </div>
+
+  <div id="hud">
+    <div id="scoreboard">Home <span id="scoreA">0</span> — <span id="scoreB">0</span> Away</div>
+    <div id="instructions">Move: WASD / Arrows • Kick: Space (hold to charge) • Press H to randomize color</div>
+    <div id="kickContainer"><div id="kickCharge"></div></div>
+    <button id="reset">Reset ball</button>
+  </div>
+  <!-- Use an import map so example modules that import the bare specifier 'three' resolve in the browser. -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.152.2/build/three.module.js"
+    }
+  }
+  </script>
+
+  <!-- Use the ES module version; run a local server (python -m http.server) when testing locally. -->
+  <script type="module" src="main.js"></script>
+</body>
+</html>

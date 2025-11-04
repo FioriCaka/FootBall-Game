@@ -1,0 +1,15 @@
+{
+  "name": "threejs-football",
+  "version": "0.1.0",
+  "description": "Minimal Three.js football demo — controllable runner, ball, simple physics and scoring.",
+  "scripts": {
+    "start": "http-server -c-1 -p 8000",
+    "serve:python": "python -m http.server 8000"
+  },
+  "keywords": ["threejs","game","football","demo"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
