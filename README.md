@@ -10,24 +10,24 @@ Files:
 
 How to run locally
 
-Option A — Python simple server (works on Windows with Git Bash, WSL, or any shell with Python):
+Python simple server (works on Windows with Git Bash, WSL, or any shell with Python):
 
 ```bash
 # from the repository root (where this README lives):
-cd threejs-animation
-python -m http.server 8000
-# then open http://localhost:8000 in your browser
-```
 
-Option B — VS Code Live Server extension: open the folder and click "Go Live".
+If there is no IDE installed on your computer
+    Put the Project folder on Desktop folder
+    Press shift + Right Click on Desktop and press Open Powershell window here
+Than
+    cd threejs-animation
+    python -m http.server 8000
+    open http://localhost:8000 in your browser
 
-Option C — npm (recommended if you use Node.js):
-
-```bash
-# install dev deps (only needed once)
-npm install
-# then start the local http server
-npm start
+Otherwise if there is a IDE on your computer
+    open the folder with the IDE and on integrated terminal type
+        cd threejs-animation
+        python -m http.server 8000
+    than open http://localhost:8000 in your browser
 ```
 
 Notes
